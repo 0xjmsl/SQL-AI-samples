@@ -8,6 +8,8 @@
                 "env": {
                   "SERVER_NAME": "your-server-name.database.windows.net",
                   "DATABASE_NAME": "your-database-name",
+                  "SQL_USERNAME": "your-sql-username",
+                  "SQL_PASSWORD": "your-sql-password",
                   "READONLY": "false"
                 }
             }

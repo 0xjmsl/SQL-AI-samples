@@ -69,6 +69,8 @@ This server leverages the Model Context Protocol (MCP), a versatile framework th
           "env": {
             "SERVER_NAME": "your-server-name.database.windows.net",
             "DATABASE_NAME": "your-database-name",
+            "SQL_USERNAME": "your-sql-username",
+            "SQL_PASSWORD": "your-sql-password",
             "READONLY": "false"
           }
         }
@@ -92,6 +94,8 @@ This server leverages the Model Context Protocol (MCP), a versatile framework th
                 "env": {
                 "SERVER_NAME": "your-server-name.database.windows.net",
                 "DATABASE_NAME": "your-database-name",
+                "SQL_USERNAME": "your-sql-username",
+                "SQL_PASSWORD": "your-sql-password",
                 "READONLY": "false"
                 }
             }
@@ -126,6 +130,8 @@ This server leverages the Model Context Protocol (MCP), a versatile framework th
          "env": {
            "SERVER_NAME": "your-server-name.database.windows.net",
            "DATABASE_NAME": "your-database-name",
+           "SQL_USERNAME": "your-sql-username",
+           "SQL_PASSWORD": "your-sql-password",
            "READONLY": "false"
          }
        }
@@ -138,8 +144,10 @@ This server leverages the Model Context Protocol (MCP), a versatile framework th
 
 ### Configuration Parameters
 
-- **SERVER_NAME**: Your MSSQL Database server name (e.g., `my-server.database.windows.net`)
+- **SERVER_NAME**: Your MSSQL Server hostname (e.g., `localhost` or `my-server.database.windows.net`)
 - **DATABASE_NAME**: Your database name
+- **SQL_USERNAME**: SQL Server username for authentication
+- **SQL_PASSWORD**: SQL Server password for authentication
 - **READONLY**: Set to `"true"` to restrict to read-only operations, `"false"` for full access
 - **Path**: Update the path in `args` to point to your actual project location.
 - **CONNECTION_TIMEOUT**: (Optional) Connection timeout in seconds. Defaults to `30` if not set.
